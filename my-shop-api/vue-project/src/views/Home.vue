@@ -1,12 +1,12 @@
-<template>
-    <section>
-        <h1>je suis sur la page home</h1>
-    </section>
-</template>
-
-<script>
-
+<script setup>
+// import TheWelcome from '../components/TheWelcome.vue'
 </script>
+
+<template>
+  <main>
+    <!-- <TheWelcome /> -->
+  </main>
+</template>
 
 <style>
 </style>
