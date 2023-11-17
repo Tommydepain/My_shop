@@ -64,7 +64,7 @@
           if (user) {
             console.log('Login successful!');
   
-            this.$router.push('/Register');
+            this.$router.push('/Home');
           } else {
             console.error('User not found or invalid credentials.');
           }
@@ -78,7 +78,7 @@
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyMzgwMDAsImV4cCI6MTcwMDI0MTYwMCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InRvbW15LmplYW4tamVhbkBlcGl0ZWNoLmRpZ2l0YWwifQ.o2UVALRepboGITm0RjgGl2mPcmrBEFDg382b43NbZ4UpTsXS2qDDpwe3deHLne7MmPflYnLyR69QWsdpvMX4BL_DbE9P8Y4KcIgJG8NYepTufpDGaUqudjVOkxg3j2R7cazigjz-Zx3zQ9lhilSgJASny_xAb047Nl0iaC4jFUaM2rTygsBsYJIR32URzT7Xzwk4hAJQuvNBK8EBIOHxrVg36FdvMGdJhWSDQuJ19iRwqHAD8eU9EGCkvKqMRwI2-HMZ-vb9Hw1gpkUg1izGIaV2DB8vFyYRS4_EgwwXJrMF4sXF6uxl5ZLqHykNNaHxNW8rHxlCh7bxMOsNlLiP7A',
+              'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDAyNTI4NDcsImV4cCI6MTcwMDI1NjQ0Nywicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6InRvbW15LmplYW4tamVhbkBlcGl0ZWNoLmRpZ2l0YWwifQ.J7si23pSfSXEtiNf6qvDbRIme9XbOeuwvr0o9BhINauLeYEW5deOQKOLd68zhXXzJVRs9ysAyUtaQvuf00ePDNgQJmRF1MFH8VGQ459jBC5BdT5bghKzBuTmUv-tzx4PJOiYDZLMgA_QyY7w8QGyOT7oLmHHCng3p40-bJmYnafIACDLkaS1TfozJuaCg6vj-YXvKcgT3fDwDoczNIlHtePsdqARYs1EjWrlzXBpbnyHsDAUKkNcwPSAouep_J8YNtLg-TWLE9qmUidbAj2_xm-00ZVWjw207IBLWPIcDAQfIqYqnmZqdyjdzrot3l3q11kShRMD9y6n8zdy9bsy3A',
             },
           });
   

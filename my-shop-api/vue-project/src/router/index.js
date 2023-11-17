@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 import Products from '../views/Products.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
+import Admin from '../views/Admin.vue'
+
 
 
 
@@ -10,8 +12,8 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: '/Home',
+      name: 'Home',
       component: Home
     },
     {
@@ -28,6 +30,11 @@ const router = createRouter({
       path: '/Register',
       name: 'Register',
       component: Register
+    },
+    {
+      path: '/Admin',
+      name: 'Admin',
+      component: Admin
     },
   ]
 })
