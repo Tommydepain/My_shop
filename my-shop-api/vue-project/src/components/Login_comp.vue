@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="mx-auto flex w-full max-w-sm flex-col gap-6">
+        <div class="m-auto flex w-full max-w-sm flex-col gap-6 mt-48">
             <div class="flex flex-col items-center">
                 <h1 class="text-3xl font-semibold">Sign in</h1>
                 <p class="text-sm">Sign in to access your account</p>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-field pt-5">
                     <div class="form-control justify-between">
-                        <button class="btn btn-primary w-full">Sign in</button>
+                        <button @click="signIn" class="btn btn-primary w-full">Sign in</button>
                     </div>
                 </div>
 
@@ -48,8 +48,38 @@
 </template>
 
 <script>
+import axios from 'axios';
 
+export default {
+  methods: {
+    async signIn() {
+      try {
+        const email = this.$data.email; // Remplacez par la variable où vous stockez l'e-mail.
+        const password = this.$data.password; // Remplacez par la variable où vous stockez le mot de passe.
+
+        // Effectuer la requête POST avec Axios
+        const response = await axios.post('http://localhost:5174/Login', {
+          email: email,
+          password: password,
+        });
+
+        // Vérifier si le statut de la réponse est 200
+        if (response.status === 200) {
+          // Gérer la réussite de la connexion, par exemple, rediriger l'utilisateur
+          // vers une autre page ou stocker le jeton d'authentification.
+          console.log('Login successful!');
+        } else {
+          // Gérer les erreurs de connexion, par exemple, afficher un message d'erreur.
+          console.error('Login failed:', response.statusText);
+        }
+      } catch (error) {
+        console.error('An error occurred during login:', error);
+      }
+    },
+  },
+};  
 </script>
 
 <style>
+
 </style>

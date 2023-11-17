@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="mx-auto flex w-full max-w-sm flex-col gap-6">
+        <div class="mx-auto flex w-full max-w-sm flex-col gap-6 mt-48">
             <div class="flex flex-col items-center">
                 <h1 class="text-3xl font-semibold"> Register </h1>
                 <p class="text-sm">Sign in to access your account</p>
